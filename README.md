@@ -1,2 +1,2 @@
 # big-theater
-Learning project with Avada-media
+## Learning project with Avada Media
