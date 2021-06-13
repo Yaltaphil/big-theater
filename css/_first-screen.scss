@@ -1,0 +1,112 @@
+.first-screen {
+    width: 1920px;
+    height: 1045px;
+    background: url("../img/first-screen-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    &__text {
+    }
+
+    &__slider {
+    }
+}
+.menu-line {
+    padding: 51px 0 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 167px;
+}
+.main-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 63px;
+    flex-grow: 6;
+    &__item {
+        min-width: 91px;
+        height: 25px;
+        font-family: "Open Sans Condensed";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.phone {
+    width: 121px;
+    height: 22px;
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    &::after {
+        display: block;
+        content: "";
+        border-bottom: 2px solid #d1a954;
+        padding-top: 5px;
+    }
+}
+
+.first-screen__info {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 125px;
+    padding: 267px 0 0 0;
+}
+
+.first-screen__text {
+    & p:first-child {
+        width: 540px;
+        height: 68px;
+        @include header-font;
+    }
+    & p:nth-child(2) {
+        width: 540px;
+        height: 79px;
+        @include standart-font;
+        padding: 50px 0;
+    }
+    & button {
+        width: 160px;
+        height: 50px;
+        background: #d1a954;
+        color: $text-color;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.slider-container {
+    display: flex;
+    flex-flow: column nowrap;
+    &__img {
+        width: 350px;
+        height: 490px;
+        box-shadow: 20px 20px 0px #d1a954;
+        background: url(../img/afisha.png);
+    }
+    & .slider-navigation {
+        padding-top: 35px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+.prev {
+}
+.next {
+}
