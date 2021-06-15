@@ -1,14 +1,9 @@
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Open Sans Condensed', sans-serif;
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
-
-
-@import "reset";
 @import "colors";
 @import "fonts";
+@import "reset";
 @import "fixed-panel";
 @import "first-screen";
-@import "main";
+// @import "main";
 
 //body
 .big-wrapper {
@@ -16,26 +11,79 @@
     flex-flow: column nowrap;
     align-items: center;
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .wrapper {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    // align-items: center;
     height: 100%;
     max-width: 1110px;
 }
 
 //adaptiveness
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
+    .big-wrapper {
+        max-width: 576px;
+    }
+    .menu-line {
+        justify-content: space-between;
+    }
+    .main-menu,
+    .fixed-panel {
+        display: none;
+    }
+
+    .first-screen__info {
+        padding: 0px 0 0 0;
+    }
+    .first-screen__slider {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .big-wrapper {
+        max-width: 768px;
+    }
+    .menu-line {
+        justify-content: flex-end;
+    }
+    .main-menu,
+    .fixed-panel {
+        display: none;
+    }
+
+    .first-screen__info {
+        padding: 0px 0 0 0;
+    }
+    .first-screen__slider {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 991px) {
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .big-wrapper {
+        max-width: 992px;
+    }
+    .menu-line {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-menu {
+        gap: 30px;
+    }
+    .first-screen__info {
+        padding: 114px 0 0 0;
+    }
+    .first-screen__slider {
+        display: none;
+    }
+    .wrapper {
+        padding-left: 191px;
+    }
 }
