@@ -14,6 +14,7 @@
     &__slider {
     }
 }
+
 .menu-line {
     padding: 51px 0 0 0;
     display: flex;
@@ -28,14 +29,8 @@
     gap: 63px;
     flex-grow: 6;
     &__item {
-        min-width: 91px;
         height: 25px;
-        font-family: "Open Sans Condensed";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        letter-spacing: 0.1em;
+        @include p-18b;
         text-transform: uppercase;
         &:hover {
             cursor: pointer;
@@ -45,13 +40,9 @@
 .phone {
     width: 121px;
     height: 22px;
-    font-family: "Open Sans Condensed";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
+    @include p-16b;
     line-height: 22px;
     text-align: right;
-    letter-spacing: 0.05em;
     text-transform: uppercase;
     &::after {
         display: block;
@@ -72,35 +63,33 @@
     & p:first-child {
         width: 540px;
         height: 68px;
-        @include header-font;
+        @include heading-h1-64b;
+        text-transform: uppercase;
     }
     & p:nth-child(2) {
         width: 540px;
         height: 79px;
-        @include standart-font;
+        @include p-14r;
         padding: 50px 0;
     }
     & button {
         width: 160px;
         height: 50px;
-        background: #d1a954;
-        color: $text-color;
-        &:hover {
-            cursor: pointer;
-        }
+        background: $gold;
+        color: $white;
+        @include p-18b;
     }
 }
 
-.slider-container {
+.slide-container {
     display: flex;
     flex-flow: column nowrap;
-    &__img {
+    &__img img{
         width: 350px;
         height: 490px;
-        box-shadow: 20px 20px 0px #d1a954;
-        background: url(../img/afisha.png);
+        box-shadow: 20px 20px 0px rgba(#d1aa54d9);
     }
-    & .slider-navigation {
+    & .slide-navigation {
         padding-top: 35px;
         display: flex;
         flex-flow: row nowrap;

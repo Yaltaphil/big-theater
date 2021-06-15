@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -104,14 +105,25 @@ textarea:focus {
   outline-offset: 0;
 }
 
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .fixed-panel {
   position: fixed;
   width: 150px;
-  height: 1045px;
+  height: 100vh;
   left: 0px;
   top: 0px;
   background: rgba(51, 51, 51, 0.75);
-  z-index: 1;
+  z-index: 2;
 }
 
 .contact_info {
@@ -120,10 +132,10 @@ textarea:focus {
   height: 25px;
   left: -45px;
   top: 383px;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-family: "Open Sans Condensed";
   font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -221,14 +233,11 @@ textarea:focus {
 }
 
 .main-menu__item {
-  min-width: 91px;
   height: 25px;
   font-family: "Open Sans Condensed";
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 0.1em;
+  font-weight: bold;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -240,12 +249,11 @@ textarea:focus {
   width: 121px;
   height: 22px;
   font-family: "Open Sans Condensed";
-  font-style: normal;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
   line-height: 22px;
   text-align: right;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -272,24 +280,18 @@ textarea:focus {
   width: 540px;
   height: 68px;
   font-family: "Open Sans Condensed";
-  font-style: normal;
-  font-weight: bold;
   font-size: 64px;
-  line-height: 87px;
-  letter-spacing: 0.1em;
+  font-weight: bold;
+  letter-spacing: 6.4px;
   text-transform: uppercase;
-  color: white;
 }
 
 .first-screen__text p:nth-child(2) {
   width: 540px;
   height: 79px;
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 150%;
-  color: white;
+  line-height: 1.5;
   padding: 50px 0;
 }
 
@@ -297,7 +299,11 @@ textarea:focus {
   width: 160px;
   height: 50px;
   background: #d1a954;
-  color: white;
+  color: #ffffff;
+  font-family: "Open Sans Condensed";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.09em;
 }
 
 .first-screen__text button:hover {
@@ -317,8 +323,8 @@ textarea:focus {
 .slider-container__img {
   width: 350px;
   height: 490px;
-  -webkit-box-shadow: 20px 20px 0px #d1a954;
-          box-shadow: 20px 20px 0px #d1a954;
+  -webkit-box-shadow: 20px 20px 0px rgba(209, 169, 84, 0.85);
+          box-shadow: 20px 20px 0px rgba(209, 169, 84, 0.85);
   background: url(../img/afisha.png);
 }
 
@@ -358,5 +364,7 @@ textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  max-width: 1110px;
 }
 /*# sourceMappingURL=style.css.map */

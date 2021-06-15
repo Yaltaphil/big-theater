@@ -2,29 +2,10 @@
 // font-family: 'Open Sans Condensed', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
 
-$text-color: white;
-$bg-color: #333333;
-
-@mixin header-font {
-    font-family: "Open Sans Condensed";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 87px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $text-color;
-}
-@mixin standart-font {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    color: $text-color;
-}
 
 @import "reset";
+@import "colors";
+@import "fonts";
 @import "fixed-panel";
 @import "first-screen";
 @import "main";
@@ -41,6 +22,8 @@ $bg-color: #333333;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    height: 100%;
+    max-width: 1110px;
 }
 
 //adaptiveness

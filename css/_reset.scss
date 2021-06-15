@@ -3,7 +3,6 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    // box-sizing: border-box;
     background-color: #333333;
     color: #ffffff;
 }
@@ -51,4 +50,19 @@ textarea:hover,
 textarea:focus {
     outline: 0;
     outline-offset: 0;
+}
+
+button,
+button:hover {
+    cursor: pointer;
+    border: none;
+    background: rgba(17, 17, 16, 0.85);
+    transition: all 0.5s ease-in-out;
+}
+img {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }

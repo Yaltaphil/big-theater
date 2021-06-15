@@ -1,12 +1,11 @@
 .fixed-panel {
     position: fixed;
     width: 150px;
-    height: 1045px;
+    height: 100vh;
     left: 0px;
     top: 0px;
     background: rgba(51, 51, 51, 0.75);
-    // display: block;
-    z-index: 1;
+    z-index: 2;
 }
 
 .contact_info {
@@ -15,10 +14,7 @@
     height: 25px;
     left: -45px;
     top: 383px;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
+    @include p-18b;
     line-height: 25px;
     letter-spacing: 0.1em;
     text-transform: uppercase;

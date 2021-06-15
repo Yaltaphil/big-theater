@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
+
+@mixin heading-h1-64b {
+    font-family: "Open Sans Condensed";
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 6.4px;
+    
+}
+
+@mixin h2-48l {
+    font-family: "Open Sans Condensed";
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 4.8px;
+}
+
+@mixin h3-24b {
+    font-family: "Open Sans Condensed";
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+@mixin p-21b {
+    font-family: "Open Sans Condensed";
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2.1px;
+}
+
+@mixin p-18b {
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.09em;
+}
+
+@mixin p-16b {
+    font-family: "Open Sans Condensed";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+@mixin p-14r {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 1.5;
+}
