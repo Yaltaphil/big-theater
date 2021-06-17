@@ -6,39 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Theater</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <div class="big-wrapper">
-
-
-        <div class="fixed-panel">
-            <div class="contact_info">
-                контактная информация
-            </div>
-            <hr class="line">
-            <div class="soc-links">
-                <a class="soc-link_item">
-                    <img src="./img/instagram.png" alt="" class="soc-link_img">
-                </a>
-                <a class="soc-link_item">
-                    <img src="./img/fb.png" alt="" class="soc-link_img">
-                </a>
-                <a class="soc-link_item">
-                    <img src="./img/vk.png" alt="" class="soc-link_img">
-                </a>
-                <a class="soc-link_item">
-                    <img src="./img/youtube.png" alt="" class="soc-link_img">
-                </a>
-            </div>
+    <div class="fixed-panel">
+        <div class="contact_info">
+            контактная информация
         </div>
+        <hr class="line">
+        <div class="soc-links">
+            <a class="soc-link_item">
+                <img src="./img/instagram.png" alt="" class="soc-link_img">
+            </a>
+            <a class="soc-link_item">
+                <img src="./img/fb.png" alt="" class="soc-link_img">
+            </a>
+            <a class="soc-link_item">
+                <img src="./img/vk.png" alt="" class="soc-link_img">
+            </a>
+            <a class="soc-link_item">
+                <img src="./img/youtube.png" alt="" class="soc-link_img">
+            </a>
+        </div>
+    </div>
 
+    <menu class="burger-menu hide">
+        <div class="closeburger-button">
+            &times;
+        </div>
+        <ul class="burger-menu-line">
+            <li class="main-menu__item">Главная</li>
+            <li class="main-menu__item">О театре</li>
+            <li class="main-menu__item">наши постановки</li>
+            <li class="main-menu__item">партнеры театра</li>
+            <li class="main-menu__item">контакты</li>
+        </ul>
+        <div class="burger-soc-links">
+            <a class=" burger-soc-link_item">
+                <img src="./img/fb2.png" alt="" class="soc-link_img">
+            </a>
+            <a class="burger-soc-link_item">
+                <img src="./img/instagram2.png" alt="" class="soc-link_img">
+            </a>
+            <a class="burger-soc-link_item">
+                <img src="./img/youtube2.png" alt="" class="soc-link_img">
+            </a>
+            <a class="burger-soc-link_item">
+                <img src="./img/vk2.png" alt="" class="soc-link_img">
+            </a>
+        </div>
+    </menu>
 
+    <div class="big-wrapper">
         <div class="first-screen">
             <div class="wrapper">
                 <menu class="menu-line">
+                    <div class="burger">
+                        <img src="./img/burger.png" alt="">
+                    </div>
                     <ul class="main-menu">
                         <li class="main-menu__item">Главная</li>
                         <li class="main-menu__item">О театре</li>
@@ -50,7 +78,6 @@
                 </menu>
 
                 <div class="first-screen__info">
-
                     <div class="first-screen__text">
                         <p>Большой театр</p>
                         <p>Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года —
@@ -61,7 +88,6 @@
                             Европе XVIII.</p>
                         <button>АФИША</button>
                     </div>
-
                     <div class="first-screen__slider">
                         <div class="slide-container">
                             <div class="slide-container__img">
@@ -83,6 +109,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

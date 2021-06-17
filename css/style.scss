@@ -2,6 +2,7 @@
 @import "fonts";
 @import "reset";
 @import "fixed-panel";
+@import "burger";
 @import "first-screen";
 // @import "main";
 
@@ -17,9 +18,17 @@
 .wrapper {
     display: flex;
     flex-flow: column nowrap;
-    // align-items: center;
+    align-items: center;
     height: 100%;
     max-width: 1110px;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
 }
 
 //adaptiveness
@@ -29,11 +38,15 @@
         max-width: 576px;
     }
     .menu-line {
+        width: 100%;
         justify-content: space-between;
     }
     .main-menu,
     .fixed-panel {
         display: none;
+    }
+    .burger {
+        display: block;
     }
 
     .first-screen__info {
@@ -49,13 +62,16 @@
         max-width: 768px;
     }
     .menu-line {
-        justify-content: flex-end;
+        justify-content: space-between;
+        width: 100%;
     }
     .main-menu,
     .fixed-panel {
         display: none;
     }
-
+    .burger {
+        display: block;
+    }
     .first-screen__info {
         padding: 0px 0 0 0;
     }
@@ -67,6 +83,9 @@
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     .big-wrapper {
         max-width: 992px;
+    }
+    .burger-menu {
+        display: none;
     }
     .menu-line {
         flex-direction: column;

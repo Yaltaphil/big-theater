@@ -3,13 +3,11 @@
     height: 1045px;
     background: url("../img/first-screen-bg.png") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
-
-
 
 .menu-line {
     padding: 51px 0 0 0;
