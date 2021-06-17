@@ -5,6 +5,7 @@
 @import "burger";
 @import "first-screen";
 @import "main-page";
+@import "postanovki";
 
 //body
 .big-wrapper {
@@ -33,16 +34,11 @@
 
 //adaptiveness
 
-@media only screen and (max-width: 576px) {
-    .big-wrapper {
-        margin: 0 33px;
-    }
+@media (max-width: 576px) {
     .first-screen {
         height: 600px;
     }
-
     .menu-line {
-        width: 100vw;
         justify-content: space-between;
     }
     .main-menu,
@@ -51,21 +47,21 @@
     }
     .burger {
         display: block;
+        padding-left: 20px;
     }
-
-    .first-screen__text {
-        // max-width: 540px;
+    .phone {
+        padding-right: 20px;
     }
     .first-screen__text p:first-child {
         font-size: 52px;
-        text-align: center;
+        text-align: left;
     }
     .first-screen__text p:nth-child(2) {
-        text-align: center;
+        text-align: left;
     }
 
     .first-screen__info {
-        padding: 0 0 0 20px;
+        padding: 0 20px;
     }
     .first-screen__slider {
         display: none;
@@ -83,6 +79,7 @@
     .block__title,
     .block__text {
         text-align: center;
+        padding: 0 20px;
     }
     .block-wrapper {
         display: flex;
@@ -92,19 +89,12 @@
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-    .big-wrapper {
-        max-width: 768px;
-    }
+@media (min-width: 577px) and (max-width: 768px) {
     .first-screen {
         height: 800px;
     }
-    .wrapper {
-    }
-
     .menu-line {
         justify-content: space-between;
-        width: 100%;
     }
     .main-menu,
     .fixed-panel {
@@ -112,10 +102,22 @@
     }
     .burger {
         display: block;
+        padding-left: 20px;
     }
+    .phone {
+        padding-right: 20px;
+    }
+
     .first-screen__info {
-        padding: 0px 0 0 0;
+        padding: 0 20px;
     }
+    .first-screen__text p:first-child {
+        text-align: left;
+    }
+    .first-screen__text p:nth-child(2) {
+        text-align: left;
+    }
+
     .first-screen__slider {
         display: none;
     }
@@ -126,11 +128,16 @@
     .about-theater__title {
         margin: 90px 0 60px 0;
     }
+    .block__title,
+    .block__text {
+        // text-align: center;
+        padding: 0 20px;
+    }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    .big-wrapper {
-        max-width: 992px;
+@media (min-width: 769px) and (max-width: 992px) {
+    .wrapper {
+        padding: 0 20px 0 150px;
     }
     .burger-menu {
         display: none;
@@ -145,13 +152,10 @@
         gap: 30px;
     }
     .first-screen__info {
-        padding: 114px 0 0 0;
+        padding: 0 20px 0 20px;
     }
     .first-screen__slider {
         display: none;
-    }
-    .wrapper {
-        padding-left: 191px;
     }
 
     .about-theater__block3 {
@@ -159,5 +163,17 @@
     }
     .about-theater__title {
         margin: 150px 0 100px 0;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1419px) {
+    .wrapper {
+        padding: 0 20px 0 150px;
+    }
+}
+
+@media (min-width: 1420px) {
+    .first-screen > .wrapper {
+        padding: 0;
     }
 }

@@ -1,0 +1,51 @@
+.postanovki {
+    &__title {
+        text-align: center;
+        color: $white;
+        @include h2-48l;
+        & span {
+            color: $gold;
+        }
+    }
+    &__slider {
+        max-width: 1920px;
+        height: 550px;
+        padding-left: 150px;
+        display: flex;
+    }
+}
+.slider-card {
+    width: 442px;
+    height: 550px;
+    background-color: rgba(51, 51, 51, 0.65);
+    &__tag1 {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        text-align: left;
+        color: $white;
+        @include h3-24b;
+    }
+    &__tag2 {
+        position: absolute;
+        bottom: 80px;
+        left: 0px;
+        transform: rotate(-90deg);
+        text-align: left;
+        color: $white;
+        @include p-18b;
+    }
+}
+
+// .swiper-container {
+// }
+// .mySwiper1 {
+// }
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 442px;
+    height: 550px;
+}

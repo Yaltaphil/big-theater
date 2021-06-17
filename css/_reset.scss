@@ -5,9 +5,8 @@ body {
     height: 100%;
     background-color: #333333;
     color: #ffffff;
+    transition: all 0.5s ease-in-out;
 }
-
-
 
 .no-scroll {
     overflow: hidden;

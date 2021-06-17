@@ -1,5 +1,5 @@
 .about-theater {
-    height: 922px;
+    min-height: 922px;
 }
 
 .about-theater {
@@ -19,17 +19,17 @@
     }
 
     &__block1 {
-        width: 445px;
+        max-width: 445px;
         height: 292px;
     }
 
     &__block2 {
-        width: 255px;
+        max-width: 255px;
         height: 292px;
     }
 
     &__block3 {
-        width: 350px;
+        max-width: 350px;
         height: 292px;
     }
 }
@@ -44,6 +44,7 @@
     &__text {
         text-align: left;
         margin: 0;
+        height: auto;
         color: $white;
         @include p-14r;
         & span {
