@@ -378,7 +378,6 @@ img {
 }
 
 .first-screen__text p:first-child {
-  width: 540px;
   height: 68px;
   font-family: "Open Sans Condensed";
   font-size: 64px;
@@ -389,7 +388,6 @@ img {
 }
 
 .first-screen__text p:nth-child(2) {
-  width: 540px;
   height: 79px;
   font-family: "Open Sans";
   font-size: 14px;
@@ -579,7 +577,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   max-width: 1110px;
 }
 
@@ -595,10 +592,13 @@ img {
 
 @media only screen and (max-width: 576px) {
   .big-wrapper {
-    max-width: 576px;
+    margin: 0 33px;
+  }
+  .first-screen {
+    height: 600px;
   }
   .menu-line {
-    width: 100%;
+    width: 100vw;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -610,8 +610,15 @@ img {
   .burger {
     display: block;
   }
+  .first-screen__text p:first-child {
+    font-size: 52px;
+    text-align: center;
+  }
+  .first-screen__text p:nth-child(2) {
+    text-align: center;
+  }
   .first-screen__info {
-    padding: 0px 0 0 0;
+    padding: 0 0 0 20px;
   }
   .first-screen__slider {
     display: none;
@@ -625,14 +632,37 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .about-theater__block1 {
+    text-align: center;
+  }
   .about-theater__block3 {
     display: none;
+  }
+  .block__title,
+  .block__text {
+    text-align: center;
+  }
+  .block-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 60px;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .big-wrapper {
     max-width: 768px;
+  }
+  .first-screen {
+    height: 800px;
   }
   .menu-line {
     -webkit-box-pack: justify;

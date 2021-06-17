@@ -19,7 +19,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    height: 100%;
+    // height: 100%;
     max-width: 1110px;
 }
 
@@ -35,10 +35,14 @@
 
 @media only screen and (max-width: 576px) {
     .big-wrapper {
-        max-width: 576px;
+        margin: 0 33px;
     }
+    .first-screen {
+        height: 600px;
+    }
+
     .menu-line {
-        width: 100%;
+        width: 100vw;
         justify-content: space-between;
     }
     .main-menu,
@@ -49,8 +53,19 @@
         display: block;
     }
 
+    .first-screen__text {
+        // max-width: 540px;
+    }
+    .first-screen__text p:first-child {
+        font-size: 52px;
+        text-align: center;
+    }
+    .first-screen__text p:nth-child(2) {
+        text-align: center;
+    }
+
     .first-screen__info {
-        padding: 0px 0 0 0;
+        padding: 0 0 0 20px;
     }
     .first-screen__slider {
         display: none;
@@ -59,8 +74,21 @@
         flex-direction: column;
         align-items: center;
     }
+    .about-theater__block1 {
+        text-align: center;
+    }
     .about-theater__block3 {
         display: none;
+    }
+    .block__title,
+    .block__text {
+        text-align: center;
+    }
+    .block-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: 60px;
     }
 }
 
@@ -68,9 +96,10 @@
     .big-wrapper {
         max-width: 768px;
     }
-
-    .wrapper{
-
+    .first-screen {
+        height: 800px;
+    }
+    .wrapper {
     }
 
     .menu-line {

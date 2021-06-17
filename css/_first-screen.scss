@@ -55,15 +55,15 @@
 }
 
 .first-screen__text {
+    // max-width: 540px;
+
     & p:first-child {
-        width: 540px;
         height: 68px;
         @include heading-h1-64b;
         text-transform: uppercase;
         padding-top: 53px;
     }
     & p:nth-child(2) {
-        width: 540px;
         height: 79px;
         @include p-14r;
         padding: 50px 0;
