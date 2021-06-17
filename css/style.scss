@@ -4,7 +4,7 @@
 @import "fixed-panel";
 @import "burger";
 @import "first-screen";
-// @import "main";
+@import "main-page";
 
 //body
 .big-wrapper {
@@ -55,12 +55,24 @@
     .first-screen__slider {
         display: none;
     }
+    .about-theater__blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-theater__block3 {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     .big-wrapper {
         max-width: 768px;
     }
+
+    .wrapper{
+
+    }
+
     .menu-line {
         justify-content: space-between;
         width: 100%;
@@ -77,6 +89,13 @@
     }
     .first-screen__slider {
         display: none;
+    }
+
+    .about-theater__block3 {
+        display: none;
+    }
+    .about-theater__title {
+        margin: 90px 0 60px 0;
     }
 }
 
@@ -104,5 +123,12 @@
     }
     .wrapper {
         padding-left: 191px;
+    }
+
+    .about-theater__block3 {
+        display: none;
+    }
+    .about-theater__title {
+        margin: 150px 0 100px 0;
     }
 }

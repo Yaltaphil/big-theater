@@ -468,6 +468,91 @@ img {
   cursor: pointer;
 }
 
+.about-theater {
+  height: 922px;
+}
+
+.about-theater__title {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Open Sans Condensed";
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 4.8px;
+}
+
+.about-theater__title::first-letter {
+  color: #d1a954;
+}
+
+.about-theater__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 30px;
+}
+
+.about-theater__block1 {
+  width: 445px;
+  height: 292px;
+}
+
+.about-theater__block2 {
+  width: 255px;
+  height: 292px;
+}
+
+.about-theater__block3 {
+  width: 350px;
+  height: 292px;
+}
+
+.block__title {
+  text-align: left;
+  color: #ffffff;
+  font-family: "Open Sans Condensed";
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  margin: 0 0 40px 0;
+}
+
+.block__text {
+  text-align: left;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.block__text span {
+  color: #d1a954;
+}
+
+.block__text2 {
+  text-align: left;
+  margin: 8px 0;
+  color: #ffffff;
+  font-family: "Open Sans Condensed";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+.block__text2 span {
+  color: #d1a954;
+}
+
+.block2_img {
+  width: 70px;
+  height: 70px;
+}
+
 .big-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,6 +616,18 @@ img {
   .first-screen__slider {
     display: none;
   }
+  .about-theater__blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-theater__block3 {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -555,6 +652,12 @@ img {
   }
   .first-screen__slider {
     display: none;
+  }
+  .about-theater__block3 {
+    display: none;
+  }
+  .about-theater__title {
+    margin: 90px 0 60px 0;
   }
 }
 
@@ -589,6 +692,12 @@ img {
   }
   .wrapper {
     padding-left: 191px;
+  }
+  .about-theater__block3 {
+    display: none;
+  }
+  .about-theater__title {
+    margin: 150px 0 100px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
