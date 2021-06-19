@@ -6,14 +6,12 @@ const closeburger = document.querySelector(".closeburger-button");
 const body = document.body;
 
 burger.addEventListener("click", () => {
-    burgermenu.classList.remove("hide");
-    burgermenu.classList.add("show");
+    burgermenu.style.display = "flex";
     body.style.overflowY = "hidden";
 });
 
 closeburger.addEventListener("click", () => {
-    burgermenu.classList.remove("show");
-    burgermenu.classList.add("hide");
+    burgermenu.style.display = "none";
     body.style.overflowY = "scroll";
 });
 

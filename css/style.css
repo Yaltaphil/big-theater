@@ -1,5 +1,5 @@
 :root {
-  font-size: calc(0.5em + 0.7vw);
+  font-size: calc(0.5em + 0.6vw);
 }
 
 body {
@@ -168,6 +168,8 @@ img {
   height: 27px;
   display: none;
   z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .burger:hover {
@@ -180,15 +182,13 @@ img {
   margin: 0;
   z-index: 2;
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
   width: 300px;
   height: 100vh;
   padding: 30px 30px 140px 39px;
   background-color: #333333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -350,11 +350,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  margin: 191px 1em 0 1em;
   gap: 125px;
-  padding: 191px 0 0 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-items: space-between;
+}
+
+.first-screen__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
 }
 
 .first-screen__text p:first-child {
@@ -387,6 +391,7 @@ img {
 }
 
 .slide-container {
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,21 +399,23 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  position: relative;
 }
 
 .slide-container__img {
   width: 350px;
   height: 490px;
-  -webkit-box-shadow: 20px 20px 1px rgba(209, 169, 84, 0.85);
-          box-shadow: 20px 20px 1px rgba(209, 169, 84, 0.85);
+  -webkit-box-shadow: 20px 20px 2px rgba(209, 169, 84, 0.85);
+          box-shadow: 20px 20px 2px rgba(209, 169, 84, 0.85);
   z-index: 1;
 }
 
 .slide-container__img-shadow {
   width: 350px;
   height: 490px;
-  -webkit-transform: translate(20px, -475px);
-          transform: translate(20px, -475px);
+  top: 20px;
+  left: 20px;
+  position: absolute;
   z-index: -10;
   opacity: 0.15;
 }
@@ -561,6 +568,7 @@ img {
 }
 
 .slider-card {
+  position: relative;
   width: 442px;
   height: 550px;
   background-color: rgba(51, 51, 51, 0.65);
@@ -592,16 +600,41 @@ img {
   letter-spacing: 0.09em;
 }
 
+.swiper-slide {
+  position: relative;
+  width: 442px;
+  height: 550px;
+}
+
+.slider-card .hovered-link {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+  left: 171px;
+  top: 225px;
+  border-radius: 50%;
+  background: rgba(189, 187, 93, 0.7);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.slider-card .hovered-link:hover {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
 .lupa {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   position: absolute;
   z-index: 2;
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  left: 3px;
+  top: 4px;
   background: url("../img/magnify.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -619,12 +652,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("../img/first-screen-bg.png");
+  margin: 0.5rem;
 }
 
 .years {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 182px;
-          flex: 0 0 182px;
+      -ms-flex: 0 1 182px;
+          flex: 0 1 182px;
   height: 298px;
   font-family: "Open Sans Condensed";
   font-size: 72px;
@@ -635,9 +669,10 @@ img {
 }
 
 .stars {
-  margin: 1em 2em;
+  min-width: 180px;
+  margin: 0em 1em;
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
 .stars span img {
@@ -711,18 +746,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1110px;
-  margin-left: 160px;
-  margin-right: 1em;
-}
-
-.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hide {
-  display: none;
+  padding-left: 160px;
 }
 
 @media (max-width: 992px) {
@@ -744,7 +768,7 @@ img {
     display: none;
   }
   .wrapper {
-    margin-left: 0px;
+    padding-left: 0px;
   }
   .burger {
     display: block;
