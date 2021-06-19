@@ -24,18 +24,18 @@ closeburger.addEventListener("click", () => {
 //     },
 //     allowTouchMove: true,
 
-//     breakpoints: {
-//         376: {
-//             slidesPerView: 1,
-//         },
-//         767: {
-//             slidesPerView: 3,
-//         },
-//         1109: {
-//             slidesPerView: 3,
-//         },
-//         1500: {
-//             slidesPerView: 3,
-//         },
+// breakpoints: {
+//     376: {
+//         slidesPerView: 1,
 //     },
+//     767: {
+//         slidesPerView: 3,
+//     },
+//     1109: {
+//         slidesPerView: 3,
+//     },
+//     1500: {
+//         slidesPerView: 3,
+//     },
+// },
 // });

@@ -6,6 +6,11 @@
 @import "first-screen";
 @import "main-page";
 @import "postanovki";
+@import "rating";
+@import "partners";
+@import "mecenat";
+@import "footer";
+
 
 //body
 .big-wrapper {
@@ -20,8 +25,9 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    // height: 100%;
     max-width: 1110px;
+    margin-left: 160px;
+    margin-right: 1em;
 }
 
 .show {
@@ -34,13 +40,65 @@
 
 //adaptiveness
 
+@media (max-width: 992px) {
+    .first-screen__slider,
+    .about-theater__block3 {
+        display: none;
+    }
+    .about-theater__title {
+        margin: 150px 0 100px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-screen {
+        min-height: 800px;
+    }
+
+    .main-menu,
+    .fixed-panel {
+        display: none;
+    }
+    .wrapper {
+        margin-left: 0px;
+    }
+
+    .burger {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .first-screen__info {
+        padding: 0 20px;
+    }
+    .first-screen__text p:first-child {
+        text-align: left;
+    }
+    .first-screen__text p:nth-child(2) {
+        text-align: left;
+    }
+
+    .first-screen__slider {
+        display: none;
+    }
+
+    .about-theater__block3 {
+        display: none;
+    }
+    .about-theater__title {
+        margin: 90px 0 60px 0;
+    }
+    .block__title,
+    .block__text {
+        // text-align: center;
+        padding: 0 20px;
+    }
+}
 @media (max-width: 576px) {
     .first-screen {
-        height: 600px;
+        min-height: 600px;
     }
-    .menu-line {
-        justify-content: space-between;
-    }
+
     .main-menu,
     .fixed-panel {
         display: none;
@@ -86,94 +144,5 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         gap: 60px;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    .first-screen {
-        height: 800px;
-    }
-    .menu-line {
-        justify-content: space-between;
-    }
-    .main-menu,
-    .fixed-panel {
-        display: none;
-    }
-    .burger {
-        display: block;
-        padding-left: 20px;
-    }
-    .phone {
-        padding-right: 20px;
-    }
-
-    .first-screen__info {
-        padding: 0 20px;
-    }
-    .first-screen__text p:first-child {
-        text-align: left;
-    }
-    .first-screen__text p:nth-child(2) {
-        text-align: left;
-    }
-
-    .first-screen__slider {
-        display: none;
-    }
-
-    .about-theater__block3 {
-        display: none;
-    }
-    .about-theater__title {
-        margin: 90px 0 60px 0;
-    }
-    .block__title,
-    .block__text {
-        // text-align: center;
-        padding: 0 20px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-    .wrapper {
-        padding: 0 20px 0 150px;
-    }
-    .burger-menu {
-        display: none;
-    }
-    .menu-line {
-        flex-direction: column;
-        gap: 50px;
-        align-items: center;
-        justify-content: center;
-    }
-    .main-menu {
-        gap: 30px;
-    }
-    .first-screen__info {
-        padding: 0 20px 0 20px;
-    }
-    .first-screen__slider {
-        display: none;
-    }
-
-    .about-theater__block3 {
-        display: none;
-    }
-    .about-theater__title {
-        margin: 150px 0 100px 0;
-    }
-}
-
-@media (min-width: 993px) and (max-width: 1419px) {
-    .wrapper {
-        padding: 0 20px 0 150px;
-    }
-}
-
-@media (min-width: 1420px) {
-    .first-screen > .wrapper {
-        padding: 0;
     }
 }

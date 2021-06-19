@@ -1,15 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
     background-color: #333333;
     color: #ffffff;
-    transition: all 0.5s ease-in-out;
-}
-
-.no-scroll {
-    overflow: hidden;
+    transition: all 0.1s ease;
 }
 
 a {
@@ -24,18 +21,14 @@ ul {
 li {
     list-style: none;
 }
-input::placeholder {
-    color: #989898;
-    font-family: "Open Sans";
-    font-size: 12px;
-    line-height: 150%;
-}
+input::placeholder,
 textarea::placeholder {
     color: #989898;
     font-family: "Open Sans";
     font-size: 12px;
     line-height: 150%;
 }
+
 input:active,
 input:hover,
 input:focus {

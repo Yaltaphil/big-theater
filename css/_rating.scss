@@ -1,0 +1,35 @@
+.rating {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/first-screen-bg.png');
+}
+.years {
+    flex: 0 0 182px;
+    height: 298px;
+    font-family: "Open Sans Condensed";
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 150%;
+    color: $gold;
+    float: left;
+}
+.stars {
+    margin: 1em 2em;
+    float: left;
+    width: 50%;
+    & span img {
+        width: 26px;
+        height: 26px;
+        margin: 0.3em;
+    }
+}
+.best-teather {
+    margin: 1em 0 0 0;
+    font-family: "Open Sans";
+    font-size: 2em;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: 700;
+}

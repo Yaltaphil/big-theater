@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex: 1 0 75%;
+    margin: 0.5em 1em;
+}
+.footer-right {
+    flex: 1 0 25%;
+    margin: 0.5em 1em;
+}

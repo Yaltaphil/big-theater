@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Theater</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,23 +17,23 @@
             контактная информация
         </div>
         <hr class="line">
-        <div class="soc-links">
-            <a class="soc-link_item">
+        <div class="social-links">
+            <a class="social-link_item">
                 <img src="./img/instagram.png" alt="" class="soc-link_img">
             </a>
-            <a class="soc-link_item">
+            <a class="social-link_item">
                 <img src="./img/fb.png" alt="" class="soc-link_img">
             </a>
-            <a class="soc-link_item">
+            <a class="social-link_item">
                 <img src="./img/vk.png" alt="" class="soc-link_img">
             </a>
-            <a class="soc-link_item">
+            <a class="social-link_item">
                 <img src="./img/youtube.png" alt="" class="soc-link_img">
             </a>
         </div>
     </div>
 
-    <menu class="burger-menu hide">
+    <div class="burger-menu hide">
         <div class="closeburger-button">
             &times;
         </div>
@@ -58,12 +58,12 @@
                 <img src="./img/vk2.png" alt="" class="soc-link_img">
             </a>
         </div>
-    </menu>
+    </div>
 
     <div class="big-wrapper">
         <div class="first-screen">
             <div class="wrapper">
-                <menu class="menu-line">
+                <div class="menu-line">
                     <div class="burger">
                         <img src="./img/burger.png" alt="">
                     </div>
@@ -74,8 +74,8 @@
                         <li class="main-menu__item">партнеры театра</li>
                         <li class="main-menu__item">контакты</li>
                     </ul>
-                    <div class="phone"> +7 495 123-45-67</div>
-                </menu>
+                    <div class="phone">+7 495 123-45-67</div>
+                </div>
                 <div class="first-screen__info">
                     <div class="first-screen__text">
                         <p>Большой театр</p>
@@ -88,19 +88,25 @@
                         <button>АФИША</button>
                     </div>
                     <div class="first-screen__slider">
-                        <div class="slide-container">
-                            <div class="slide-container__img">
-                                <img src="./img/afisha.png" alt="">
-                                <img class="slide-container__img-shadow" src="./img/afisha.png" alt="">
-                            </div>
-                            <div class="slide-navigation">
-                                <div class="prev">
-                                    <img src="./img/Arrow-left.png" alt="">
-                                    <p>ПРЕД</p>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-container mySwiper1">
+                                <div class="swiper-slide">
+                                    <div class="slide-container">
+                                        <div class="slide-container__img">
+                                            <img src="./img/afisha.png" alt="">
+                                            <img class="slide-container__img-shadow" src="./img/afisha.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="next">
-                                    <p>СЛЕД</p>
-                                    <img src="./img/Arrow-right.png" alt="">
+                                <div class="slide-navigation">
+                                    <div class="prev">
+                                        <img src="./img/Arrow-left.png" alt="">
+                                        <p>ПРЕД</p>
+                                    </div>
+                                    <div class="next">
+                                        <p>СЛЕД</p>
+                                        <img src="./img/Arrow-right.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -116,13 +122,18 @@
                     <div class="about-theater__blocks">
                         <div class="about-theater__block1">
                             <p class="block__title">САМЫЙ ЛУЧШИЙ ТЕАТР СПБ</p>
-                            <p class="block__text">Как свидетельствуют архивные документы, первое каменное здание
+                            <p class="block__text">Как свидетельствуют архивные документы, первое каменное
+                                здание
                                 Большого театра начали возводить в 1775 году по проекту
-                                Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично
+                                Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог
+                                лично
                                 наблюдать за ходом работ, Екатерина
-                                II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну
+                                II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу
+                                Тишбейну
                                 создать новый проект театра,
-                                который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его
+                                который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым.
+                                Открытие
+                                его
                                 состоялось в 1783 году, хотя,
                                 основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
                         </div>
@@ -150,45 +161,107 @@
         <div class="postanovki">
             <div class="postanovki__title"><span>НАШИ</span> ПОСТАНОВКИ</div>
             <div class="postanovki__slider">
-                <div class="swiper-container mySwiper1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slider-card">
-                                <img src="./img/slide1.png" alt="">
-                            </div>
-                            <div class="slider-card__tag1">ОСКАР 2020</div>
-                            <div class="slider-card__tag2">СЕНТЯБРЬ 2020</div>
+                <!-- <div class="swiper-container mySwiper1"> -->
+                <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-slide">
+                    <div class="slider-card">
+                        <img src="./img/slide1.png" alt="">
+                    </div>
+                    <div class="slider-card__tag1">ОСКАР 2020</div>
+                    <div class="slider-card__tag2">СЕНТЯБРЬ 2020</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-card">
+                        <img src="./img/slide2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-card">
+                        <img src="./img/slide3.png" alt="">
+                        <div class="hovered-link">
+                            <div class="lupa"></div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slider-card">
-                                <img src="./img/slide2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-card">
-                                <img src="./img/slide3.png" alt="">
-                                <div class="hovered-link">
-                                    <div class="lupa "></div>
-                                </div>
-                                <div class="slider-card__tag1">ЗОЛОТОЙ ГРАМОФОН</div>
-                                <div class="slider-card__tag2">ИЮЛЬ 2020</div>
+                        <div class="slider-card__tag1">ЗОЛОТОЙ ГРАМОФОН</div>
+                        <div class="slider-card__tag2">ИЮЛЬ 2020</div>
 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-card">
-                                <img src="./img/slide4.png" alt="">
-                                <div class="slider-card__tag1">ЩЕЛКУНЧИК</div>
-                                <div class="slider-card__tag2">МАЙ 2020</div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-card">
+                        <img src="./img/slide4.png" alt="">
+                        <div class="slider-card__tag1">ЩЕЛКУНЧИК</div>
+                        <div class="slider-card__tag2">МАЙ 2020</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <div class="wrapper">
+        <div class="rating">
+            <div class="years">
+                2018 2019 2020
+            </div>
+            <div class="stars">
+                <span>
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                </span>
+                <div class="best-teather">
+                    Лучший театр по мнению театральных критиков Парижа
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="partners">
+            <div class="patners-title">
+                Партнеры театра
+            </div>
+            <div class="partners-tiles">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="mecenat">
+            <div class="mecenat-title">СТАТЬ МЕЦЕНАТОМ</div>
+            <div class="mecenat-block">
+                <div class="contacts">
+                </div>
+                <form class="mecenat-form">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Компания">
+                    <input type="phone" placeholder="Телефон">
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Сообщение">
+                    <div class="form-info">
+
+                    </div>
+                    <button type="submit">ОТПРАВИТЬ</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <footer class="footer">
+            <div class="footer-left"> &copy; Все права защищены. Большой театр. 2020</div>
+            <div class="footer-right">Разработано d-e-n.ru</div>
+        </footer>
+    </div>
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="./index.js"></script>
 </body>
 
