@@ -35,9 +35,6 @@
     .about-theater__block3 {
         display: none;
     }
-    .partner-tile.tile-off2 {
-        display: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -87,10 +84,6 @@
     .block__text {
         // text-align: center;
         padding: 0 20px;
-    }
-    .partner-tile.tile-off {
-        display: none;
-        flex-basis: 50%;
     }
 }
 @media (max-width: 576px) {
@@ -146,9 +139,5 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         gap: 60px;
-    }
-
-    .partner-tile.tile-off {
-        display: none;
     }
 }

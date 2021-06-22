@@ -15,25 +15,23 @@ closeburger.addEventListener("click", () => {
     body.style.overflowY = "scroll";
 });
 
-// const swiper1 = new Swiper(".mySwiper1", {
-//     loop: true,
-//     autoplay: {
-//         delay: 3500,
-//     },
-//     allowTouchMove: true,
-
-// breakpoints: {
-//     376: {
-//         slidesPerView: 1,
-//     },
-//     767: {
-//         slidesPerView: 3,
-//     },
-//     1109: {
-//         slidesPerView: 3,
-//     },
-//     1500: {
-//         slidesPerView: 3,
-//     },
-// },
-// });
+const swiper3 = new Swiper(".Swiper3", {
+    // centeredSlides: true,
+    loop: true,
+    // slideToClickedSlide: true,
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 1,
+        },
+    },
+    slidesPerView: "auto",
+    // allowTouchMove: true,
+    resizeReInit: true,
+    // watchOverflow: true,
+});
