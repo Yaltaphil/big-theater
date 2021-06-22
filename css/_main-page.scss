@@ -4,6 +4,7 @@
 
 .about-theater {
     &__title {
+        margin: 150px 0 100px 0;
         text-align: center;
         color: $white;
         @include h2-48l;

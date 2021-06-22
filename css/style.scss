@@ -30,14 +30,13 @@
 
 //adaptiveness
 
-
 @media (max-width: 992px) {
     .first-screen__slider,
     .about-theater__block3 {
         display: none;
     }
-    .about-theater__title {
-        margin: 150px 0 100px 0;
+    .partner-tile.tile-off2 {
+        display: none;
     }
 }
 
@@ -51,14 +50,16 @@
         display: none;
     }
     .wrapper {
-    padding-left: 0px;
+        padding-left: 0px;
     }
 
     .burger {
         display: block;
         padding-left: 20px;
     }
-
+    .phone {
+        padding-right: 20px;
+    }
     .first-screen__info {
         padding: 0 20px;
     }
@@ -79,10 +80,17 @@
     .about-theater__title {
         margin: 90px 0 60px 0;
     }
+    .rating {
+        margin: 90px 0 0 0;
+    }
     .block__title,
     .block__text {
         // text-align: center;
         padding: 0 20px;
+    }
+    .partner-tile.tile-off {
+        display: none;
+        flex-basis: 50%;
     }
 }
 @media (max-width: 576px) {
@@ -125,6 +133,9 @@
     .about-theater__block3 {
         display: none;
     }
+    .rating {
+        margin: 80px 0 0 0;
+    }
     .block__title,
     .block__text {
         text-align: center;
@@ -135,5 +146,9 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         gap: 60px;
+    }
+
+    .partner-tile.tile-off {
+        display: none;
     }
 }

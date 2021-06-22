@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
 :root {
-  font-size: calc(0.5em + 0.6vw);
+  font-size: calc(0.6em + 0.3vw);
 }
 
 body {
@@ -114,7 +115,7 @@ img {
   left: -45px;
   top: 383px;
   font-family: "Open Sans Condensed";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.09em;
   line-height: 25px;
@@ -227,7 +228,7 @@ img {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans Condensed";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1.2px;
 }
@@ -295,9 +296,10 @@ img {
 }
 
 .main-menu {
+  max-width: 80%;
   -webkit-box-flex: 5;
-      -ms-flex: 5 0 70%;
-          flex: 5 0 70%;
+      -ms-flex: 5;
+          flex: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,14 +307,13 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-menu__item {
   display: block;
-  padding: 0 1em 0 0;
   font-family: "Open Sans Condensed";
   font-size: 1rem;
   font-weight: bold;
@@ -364,7 +365,7 @@ img {
 .first-screen__text p:first-child {
   height: 68px;
   font-family: "Open Sans Condensed";
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
   letter-spacing: 6.4px;
   text-transform: uppercase;
@@ -374,7 +375,7 @@ img {
 .first-screen__text p:nth-child(2) {
   height: 79px;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 1.5;
   padding: 50px 0;
 }
@@ -385,7 +386,7 @@ img {
   background: #d1a954;
   color: #ffffff;
   font-family: "Open Sans Condensed";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.09em;
 }
@@ -458,10 +459,11 @@ img {
 }
 
 .about-theater__title {
+  margin: 150px 0 100px 0;
   text-align: center;
   color: #ffffff;
   font-family: "Open Sans Condensed";
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
   letter-spacing: 4.8px;
 }
@@ -506,7 +508,7 @@ img {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans Condensed";
-  font-size: 21px;
+  font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 2.1px;
   margin: 0 0 40px 0;
@@ -518,7 +520,7 @@ img {
   height: auto;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 
@@ -546,10 +548,11 @@ img {
 }
 
 .postanovki__title {
+  margin: 50px 0 100px 0px;
   text-align: center;
   color: #ffffff;
   font-family: "Open Sans Condensed";
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
   letter-spacing: 4.8px;
 }
@@ -581,7 +584,7 @@ img {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans Condensed";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1.2px;
 }
@@ -595,7 +598,7 @@ img {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans Condensed";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.09em;
 }
@@ -652,7 +655,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("../img/first-screen-bg.png");
-  margin: 0.5rem;
+  margin: 150px 0 0 0;
 }
 
 .years {
@@ -688,6 +691,57 @@ img {
   line-height: 150%;
   font-style: normal;
   font-weight: 700;
+}
+
+.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners-title {
+  font-family: "Open Sans Condensed";
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 4.8px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin: 150px 0 100px 0;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.partners-title > span {
+  color: #d1a954;
+}
+
+.partners-tiles {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2rem;
+}
+
+.partner-tile {
+  width: 200px;
+  height: 96px;
+  margin: 1rem;
 }
 
 .footer {
@@ -754,8 +808,8 @@ img {
   .about-theater__block3 {
     display: none;
   }
-  .about-theater__title {
-    margin: 150px 0 100px 0;
+  .partner-tile.tile-off2 {
+    display: none;
   }
 }
 
@@ -773,6 +827,9 @@ img {
   .burger {
     display: block;
     padding-left: 20px;
+  }
+  .phone {
+    padding-right: 20px;
   }
   .first-screen__info {
     padding: 0 20px;
@@ -792,9 +849,17 @@ img {
   .about-theater__title {
     margin: 90px 0 60px 0;
   }
+  .rating {
+    margin: 90px 0 0 0;
+  }
   .block__title,
   .block__text {
     padding: 0 20px;
+  }
+  .partner-tile.tile-off {
+    display: none;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
@@ -841,6 +906,9 @@ img {
   .about-theater__block3 {
     display: none;
   }
+  .rating {
+    margin: 80px 0 0 0;
+  }
   .block__title,
   .block__text {
     text-align: center;
@@ -858,6 +926,9 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     gap: 60px;
+  }
+  .partner-tile.tile-off {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

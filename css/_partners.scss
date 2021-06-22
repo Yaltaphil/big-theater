@@ -1,0 +1,28 @@
+.partners {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.partners-title {
+    @include h2-48l;
+    flex-grow: 0;
+    margin: 150px 0 100px 0;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    & > span {
+        color: $gold;
+    }
+}
+.partners-tiles {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.partner-tile {
+    width: 200px;
+    height: 96px;
+    margin: 1rem;
+}
