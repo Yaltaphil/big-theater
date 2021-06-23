@@ -35,6 +35,9 @@
     .about-theater__block3 {
         display: none;
     }
+    .mecenat-blocks {
+        flex-direction: column-reverse;
+    }
 }
 
 @media (max-width: 768px) {
@@ -140,5 +143,11 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         gap: 60px;
+    }
+    .mecenat-form {
+        flex-direction: column;
+    }
+    .fields3 {
+        flex-direction: column-reverse;
     }
 }
