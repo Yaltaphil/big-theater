@@ -725,13 +725,12 @@ img {
 }
 
 .partners-tiles {
-  max-width: 992px;
-  margin: 0 auto;
+  width: 992px;
 }
 
 .partner-tile {
   margin: 0 auto;
-  width: 210px;
+  max-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

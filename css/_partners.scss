@@ -17,13 +17,13 @@
 }
 
 .partners-tiles {
-    max-width: 992px;
-    margin: 0 auto;
+    width: 992px;
+    // margin: 0 auto;
 }
 
 .partner-tile {
     margin: 0 auto;
-    width: 210px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     & div {

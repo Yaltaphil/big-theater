@@ -16,22 +16,21 @@ closeburger.addEventListener("click", () => {
 });
 
 const swiper3 = new Swiper(".Swiper3", {
-    // centeredSlides: true,
+    slidesPerView: 1,
     loop: true,
-    // slideToClickedSlide: true,
     breakpoints: {
-        992: {
+        1200: {
             slidesPerView: 4,
         },
-        768: {
-            slidesPerView: 1,
+        992: {
+            slidesPerView: 3,
         },
-        576: {
-            slidesPerView: 1,
+        768: {
+            slidesPerView: 2,
         },
     },
-    slidesPerView: "auto",
+    // centeredSlides: true,
     // allowTouchMove: true,
-    resizeReInit: true,
+    // resizeReInit: true,
     // watchOverflow: true,
 });
