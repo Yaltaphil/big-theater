@@ -38,6 +38,33 @@
     .mecenat-blocks {
         flex-direction: column-reverse;
     }
+
+    .contacts {
+        width: 95%;
+        flex: 1 0 100px;
+        margin: 80px 1rem;
+        position: relative;
+        & p:nth-child(1) {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+        & p:nth-child(2) {
+             position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+        }
+        & p:nth-child(3) {
+             position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        & p:nth-child(4) {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -146,8 +173,19 @@
     }
     .mecenat-form {
         flex-direction: column;
-    }
-    .fields3 {
-        flex-direction: column-reverse;
+
+        & .fields1 {
+            flex: 1;
+            width: 95%;
+            justify-content: space-between;
+        }
+        & .fields2 {
+            width: 95%;
+        }
+        & .fields3 {
+            gap: 30px;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 }

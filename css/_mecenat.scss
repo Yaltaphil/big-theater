@@ -1,4 +1,7 @@
 .mecenat {
+    width: 93%;
+    margin: 0 auto;
+    // padding: 1rem;
 }
 .mecenat-title {
     flex-grow: 0;
@@ -13,10 +16,11 @@
 .mecenat-blocks {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
 }
 
 .contacts {
-    min-width: 375px;
+    flex: 0 0 210px;
     text-align: left;
     color: $white;
     text-transform: uppercase;
@@ -26,48 +30,64 @@
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
+    // justify-content: space-between;
+    align-items: space-evenly;
 }
 .fields1 {
-    flex: 1 0 50%;
+    flex: 0 1 400px;
     display: flex;
     flex-flow: row wrap;
-    // justify-content: space-between;
+    justify-content: space-evenly;
     align-items: space-between;
     gap: 30px;
     & input {
-        flex: 0 0 40%;
-        flex-grow: 0;
-        width: 180px;
+        max-width: 180px;
         height: 35px;
-        flex-grow: 0;
-        color:white;
+        color: white;
         border: solid 1px rgb(97, 97, 97);
         background-color: rgb(68, 68, 68);
+        &::placeholder {
+             padding-left: 1rem;
+        }
     }
 }
 
 .fields2 {
-    flex: 1 0 29%;
+    flex: 1 0 120px;
     & textarea {
-        width: 270px;
+        width: 100%;
         height: 100px;
-        flex-grow: 0;
         resize: none;
         border: solid 1px rgb(97, 97, 97);
         background-color: rgb(68, 68, 68);
+         &::placeholder {
+             padding: 0.5rem 1rem;
+        }
     }
 }
 .fields3 {
+    margin-top: 10px;
     display: flex;
+    gap: 150px;
     & button {
         width: 190px;
         height: 50px;
-        flex-grow: 0;
+        padding: 1rem 2rem;
         text-align: center;
         color: $white;
         background: $gold;
         @include p-18b;
     }
-}
-.form-info {
+    & .form-info {
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgb(152, 152, 152);
+        padding: .5rem;
+    }
 }

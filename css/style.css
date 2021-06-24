@@ -744,6 +744,11 @@ img {
   margin-top: 32px;
 }
 
+.mecenat {
+  width: 93%;
+  margin: 0 auto;
+}
+
 .mecenat-title {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -769,10 +774,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contacts {
-  min-width: 375px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 210px;
+          flex: 0 0 210px;
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
@@ -791,12 +801,15 @@ img {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   gap: 30px;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
 }
 
 .fields1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,6 +817,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
@@ -811,48 +827,71 @@ img {
 }
 
 .fields1 input {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-  -ms-flex-positive: 0;
-      flex-grow: 0;
-  width: 180px;
+  max-width: 180px;
   height: 35px;
-  flex-grow: 0;
   color: white;
   border: solid 1px #616161;
   background-color: #444444;
 }
 
+.fields1 input::-webkit-input-placeholder {
+  padding-left: 1rem;
+}
+
+.fields1 input:-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+.fields1 input::-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+.fields1 input::placeholder {
+  padding-left: 1rem;
+}
+
 .fields2 {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 29%;
-          flex: 1 0 29%;
+      -ms-flex: 1 0 120px;
+          flex: 1 0 120px;
 }
 
 .fields2 textarea {
-  width: 270px;
+  width: 100%;
   height: 100px;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
   resize: none;
   border: solid 1px #616161;
   background-color: #444444;
 }
 
+.fields2 textarea::-webkit-input-placeholder {
+  padding: 0.5rem 1rem;
+}
+
+.fields2 textarea:-ms-input-placeholder {
+  padding: 0.5rem 1rem;
+}
+
+.fields2 textarea::-ms-input-placeholder {
+  padding: 0.5rem 1rem;
+}
+
+.fields2 textarea::placeholder {
+  padding: 0.5rem 1rem;
+}
+
 .fields3 {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 150px;
 }
 
 .fields3 button {
   width: 190px;
   height: 50px;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  padding: 1rem 2rem;
   text-align: center;
   color: #ffffff;
   background: #d1a954;
@@ -862,8 +901,21 @@ img {
   letter-spacing: 0.09em;
 }
 
+.fields3 .form-info {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #989898;
+  padding: .5rem;
+}
+
 .footer {
-  width: 100%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,20 +927,22 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-top: 1px solid #565656;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #989898;
+  margin-top: 30px;
 }
 
 .footer-left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 75%;
-          flex: 1 0 75%;
-  margin: 0.5em 1em;
+  margin: 1rem 0em;
 }
 
 .footer-right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
-  margin: 0.5em 1em;
+  margin: 1rem 0em;
 }
 
 .big-wrapper {
@@ -931,6 +985,34 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .contacts {
+    width: 95%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100px;
+            flex: 1 0 100px;
+    margin: 80px 1rem;
+    position: relative;
+  }
+  .contacts p:nth-child(1) {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  .contacts p:nth-child(2) {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .contacts p:nth-child(3) {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .contacts p:nth-child(4) {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
   }
 }
 
@@ -1049,11 +1131,27 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .fields3 {
+  .mecenat-form .fields1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 95%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mecenat-form .fields2 {
+    width: 95%;
+  }
+  .mecenat-form .fields3 {
+    gap: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
