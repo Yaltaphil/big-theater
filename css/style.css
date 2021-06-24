@@ -390,6 +390,10 @@ img {
   letter-spacing: 0.09em;
 }
 
+.first-screen__slider {
+  width: 370px;
+}
+
 .slide-container {
   width: 370px;
   display: -webkit-box;
