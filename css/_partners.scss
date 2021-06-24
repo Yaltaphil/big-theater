@@ -1,5 +1,6 @@
 .partners {
-    // width: 100vw;
+    width: 100%;
+    max-width: 1110px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -19,6 +20,7 @@
 }
 
 .partners-tiles {
+    width: 100%;
     max-width: 1110px;
     & .swiper-container {
         width: 90%;

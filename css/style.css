@@ -552,6 +552,11 @@ img {
   height: 70px;
 }
 
+.postanovki {
+  width: 100%;
+  max-width: 1920px;
+}
+
 .postanovki__title {
   margin: 50px 0 100px 0px;
   text-align: center;
@@ -567,6 +572,7 @@ img {
 }
 
 .postanovki__slider {
+  width: 100%;
   max-width: 1920px;
   height: 550px;
   display: -webkit-box;
@@ -710,6 +716,8 @@ img {
 }
 
 .partners {
+  width: 100%;
+  max-width: 1110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,6 +749,7 @@ img {
 }
 
 .partners-tiles {
+  width: 100%;
   max-width: 1110px;
 }
 
@@ -904,6 +913,7 @@ img {
   font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.09em;
+  font-size: 18px;
 }
 
 .fields3 .form-info {
@@ -1066,6 +1076,9 @@ img {
   .block__text {
     padding: 0 20px;
   }
+  .contacts {
+    margin: 60px 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1159,6 +1172,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contacts {
+    margin: 50px 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

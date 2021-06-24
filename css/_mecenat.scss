@@ -81,6 +81,7 @@
         color: $white;
         background: $gold;
         @include p-18b;
+        font-size: 18px;
     }
     & .form-info {
         font-family: "Open Sans";
