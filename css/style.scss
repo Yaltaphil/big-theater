@@ -16,15 +16,17 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    align-items: center;
 }
 
 .wrapper {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    left: 150px;
+    width: 100%;
     max-width: 1110px;
     padding-left: 160px;
     padding-right: 0.5rem;
@@ -37,6 +39,10 @@
     .about-theater__block3 {
         display: none;
     }
+    .first-screen__info {
+        gap: 0;
+    }
+
     .mecenat-blocks {
         flex-direction: column-reverse;
     }
@@ -181,11 +187,11 @@
 
         & .fields1 {
             flex: 1;
-            width: 95%;
+            max-width: 90%;
             justify-content: space-between;
         }
         & .fields2 {
-            width: 95%;
+            width: 90%;
         }
         & .fields3 {
             gap: 30px;
