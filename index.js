@@ -18,6 +18,7 @@ closeburger.addEventListener("click", () => {
 const swiper3 = new Swiper(".Swiper3", {
     slidesPerView: 1,
     loop: true,
+    loopedSlides: 4,
     breakpoints: {
         1200: {
             slidesPerView: 4,

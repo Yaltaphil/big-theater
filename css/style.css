@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap");
 :root {
-  font-size: calc(0.6em + 0.3vw);
+  font-size: calc(0.7em + 0.3vw);
 }
 
 body {
@@ -115,9 +115,8 @@ img {
   left: -45px;
   top: 383px;
   font-family: "Open Sans Condensed";
-  font-size: 1.125rem;
   font-weight: bold;
-  letter-spacing: 0.09em;
+  font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -832,22 +831,7 @@ img {
   color: white;
   border: solid 1px #616161;
   background-color: #444444;
-}
-
-.fields1 input::-webkit-input-placeholder {
-  padding-left: 1rem;
-}
-
-.fields1 input:-ms-input-placeholder {
-  padding-left: 1rem;
-}
-
-.fields1 input::-ms-input-placeholder {
-  padding-left: 1rem;
-}
-
-.fields1 input::placeholder {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 .fields2 {
@@ -862,22 +846,8 @@ img {
   resize: none;
   border: solid 1px #616161;
   background-color: #444444;
-}
-
-.fields2 textarea::-webkit-input-placeholder {
   padding: 0.5rem 1rem;
-}
-
-.fields2 textarea:-ms-input-placeholder {
-  padding: 0.5rem 1rem;
-}
-
-.fields2 textarea::-ms-input-placeholder {
-  padding: 0.5rem 1rem;
-}
-
-.fields2 textarea::placeholder {
-  padding: 0.5rem 1rem;
+  color: white;
 }
 
 .fields3 {
@@ -938,11 +908,11 @@ img {
 }
 
 .footer-left {
-  margin: 1rem 0em;
+  margin: 30px 0em;
 }
 
 .footer-right {
-  margin: 1rem 0em;
+  margin: 30px 0em;
 }
 
 .big-wrapper {
@@ -973,6 +943,7 @@ img {
           align-items: center;
   max-width: 1110px;
   padding-left: 160px;
+  padding-right: 0.5rem;
 }
 
 @media (max-width: 992px) {
@@ -989,8 +960,8 @@ img {
   .contacts {
     width: 95%;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 100px;
-            flex: 1 0 100px;
+        -ms-flex: 1 0 110px;
+            flex: 1 0 110px;
     margin: 80px 1rem;
     position: relative;
   }

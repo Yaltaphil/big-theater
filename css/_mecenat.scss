@@ -46,8 +46,9 @@
         color: white;
         border: solid 1px rgb(97, 97, 97);
         background-color: rgb(68, 68, 68);
+        padding-left: 0.5rem;
         &::placeholder {
-             padding-left: 1rem;
+            //  padding-left: 1rem;
         }
     }
 }
@@ -60,8 +61,10 @@
         resize: none;
         border: solid 1px rgb(97, 97, 97);
         background-color: rgb(68, 68, 68);
+        padding: 0.5rem 1rem;
+        color: white;
          &::placeholder {
-             padding: 0.5rem 1rem;
+            //  padding: 0.5rem 1rem;
         }
     }
 }

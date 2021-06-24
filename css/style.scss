@@ -26,6 +26,7 @@
     align-items: center;
     max-width: 1110px;
     padding-left: 160px;
+    padding-right: 0.5rem;
 }
 
 //adaptiveness
@@ -41,7 +42,7 @@
 
     .contacts {
         width: 95%;
-        flex: 1 0 100px;
+        flex: 1 0 110px;
         margin: 80px 1rem;
         position: relative;
         & p:nth-child(1) {
