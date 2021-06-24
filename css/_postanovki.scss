@@ -9,12 +9,15 @@
         }
     }
     &__slider {
+        overflow-x: hidden;
         max-width: 1920px;
         height: 550px;
+        float:right;
         // padding-left: 150px;
         display: flex;
         & .swiper-container {
-            width: 100vw;
+            width: 90vw;
+            
         }
     }
 }

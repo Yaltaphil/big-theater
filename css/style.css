@@ -101,6 +101,7 @@ img {
 .fixed-panel {
   position: fixed;
   width: 150px;
+  height: 100%;
   height: 100vh;
   left: 0px;
   top: 0px;
@@ -565,15 +566,17 @@ img {
 }
 
 .postanovki__slider {
+  overflow-x: hidden;
   max-width: 1920px;
   height: 550px;
+  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .postanovki__slider .swiper-container {
-  width: 100vw;
+  width: 90vw;
 }
 
 .slider-card {
