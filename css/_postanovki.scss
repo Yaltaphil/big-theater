@@ -1,5 +1,4 @@
-.postanovki {
-    
+.postanovki {    
     &__title {
         margin: 50px 0 100px 0px;
         text-align: center;
@@ -12,8 +11,11 @@
     &__slider {
         max-width: 1920px;
         height: 550px;
-        padding-left: 150px;
+        // padding-left: 150px;
         display: flex;
+        & .swiper-container {
+            width: 100vw;
+        }
     }
 }
 .slider-card {
@@ -40,11 +42,6 @@
     }
 }
 
-// .swiper-container {
-// }
-// .mySwiper1 {
-// }
-// .swiper-wrapper {}
 
 .swiper-slide {
     position: relative;
@@ -57,7 +54,6 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    // transform: translate(50%, 50%);
     z-index: 2;
     left: 171px;
     top: 225px;

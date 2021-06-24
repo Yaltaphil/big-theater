@@ -30,7 +30,6 @@ const swiper1 = new Swiper(".Swiper1", {
     // resizeReInit: true,
     // watchOverflow: true,
 });
-
 prev.addEventListener('click', () => {
     swiper1.slidePrev();
 })
@@ -40,19 +39,22 @@ next.addEventListener('click', () => {
 
 
 
+
 const swiper2 = new Swiper(".Swiper2", {
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     loop: true,
-    loopedSlides: 4,
+    // loopedSlides: 4,
+    spaceBetween: 0,
+    grabCursor: true,
     // breakpoints: {
-    //     1200: {
-    //         slidesPerView: 4,
-    //     },
-    //     992: {
+    //     576: {
     //         slidesPerView: 3,
     //     },
     //     768: {
-    //         slidesPerView: 2,
+    //         slidesPerView: 4,
+    //     },
+    //     992: {
+    //         slidesPerView: 5,
     //     },
     // },
     // centeredSlides: true,
@@ -67,6 +69,7 @@ const swiper3 = new Swiper(".Swiper3", {
     slidesPerView: 1,
     loop: true,
     loopedSlides: 4,
+    grabCursor: true,
     breakpoints: {
         1200: {
             slidesPerView: 4,

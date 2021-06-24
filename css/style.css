@@ -567,10 +567,13 @@ img {
 .postanovki__slider {
   max-width: 1920px;
   height: 550px;
-  padding-left: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.postanovki__slider .swiper-container {
+  width: 100vw;
 }
 
 .slider-card {
