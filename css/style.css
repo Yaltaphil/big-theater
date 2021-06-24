@@ -283,7 +283,6 @@ img {
 
 .menu-line {
   width: 100%;
-  max-width: 1110px;
   margin-top: 51px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +297,7 @@ img {
 }
 
 .main-menu {
-  max-width: 75%;
+  max-width: 70%;
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
@@ -974,7 +973,6 @@ img {
           align-items: center;
   width: 100%;
   max-width: 1920px;
-  margin: 0 auto;
 }
 
 .wrapper {
@@ -988,7 +986,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 150px;
   width: 100%;
   max-width: 1110px;
   padding-left: 160px;
@@ -999,9 +996,6 @@ img {
   .first-screen__slider,
   .about-theater__block3 {
     display: none;
-  }
-  .first-screen__info {
-    gap: 0;
   }
   .mecenat-blocks {
     -webkit-box-orient: vertical;
