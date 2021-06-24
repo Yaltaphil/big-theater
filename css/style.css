@@ -157,11 +157,11 @@ img {
   gap: 30px;
 }
 
-.social-link_item {
+.soc-link_item {
   background: rgba(51, 51, 51, 0.75);
 }
 
-.social-link_img:hover {
+.soc-link_img:hover {
   cursor: pointer;
 }
 
