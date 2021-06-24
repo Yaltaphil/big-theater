@@ -1,7 +1,9 @@
 .partners {
+    width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    // max-width: 1110px;
 }
 
 .partners-title {
@@ -17,16 +19,26 @@
 }
 
 .partners-tiles {
-    width: 992px;
-    // margin: 0 auto;
+    // width: 60vw;
+    & .swiper-container {
+        width: 60vw;
+        & .swiper-slide {
+            width: 200px;
+        }
+    }
 }
 
 .partner-tile {
     margin: 0 auto;
-    max-width: 200px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     & div {
         margin-top: 32px;
+        & img {
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
     }
 }

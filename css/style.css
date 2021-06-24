@@ -551,6 +551,10 @@ img {
   height: 70px;
 }
 
+.postanovki {
+  width: 100vw;
+}
+
 .postanovki__title {
   margin: 50px 0 100px 0px;
   text-align: center;
@@ -566,7 +570,6 @@ img {
 }
 
 .postanovki__slider {
-  overflow-x: hidden;
   max-width: 1920px;
   height: 550px;
   float: right;
@@ -610,6 +613,14 @@ img {
   font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0.09em;
+}
+
+.slider-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-slide {
@@ -703,6 +714,7 @@ img {
 }
 
 .partners {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,13 +745,17 @@ img {
   color: #d1a954;
 }
 
-.partners-tiles {
-  width: 992px;
+.partners-tiles .swiper-container {
+  width: 60vw;
+}
+
+.partners-tiles .swiper-container .swiper-slide {
+  width: 200px;
 }
 
 .partner-tile {
   margin: 0 auto;
-  max-width: 200px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,6 +767,13 @@ img {
 
 .partner-tile div {
   margin-top: 32px;
+}
+
+.partner-tile div img {
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mecenat {
@@ -810,6 +833,9 @@ img {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   gap: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
           align-items: space-evenly;
@@ -846,12 +872,13 @@ img {
 
 .fields2 {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 120px;
-          flex: 1 0 120px;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  margin-right: 1rem;
 }
 
 .fields2 textarea {
-  width: 100%;
+  width: 95%;
   height: 100px;
   resize: none;
   border: solid 1px #616161;
@@ -891,7 +918,7 @@ img {
   letter-spacing: normal;
   text-align: left;
   color: #989898;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .footer {
