@@ -1,4 +1,4 @@
-.postanovki {    
+.postanovki {
     &__title {
         margin: 50px 0 100px 0px;
         text-align: center;
@@ -12,12 +12,11 @@
         overflow-x: hidden;
         max-width: 1920px;
         height: 550px;
-        float:right;
+        float: right;
         // padding-left: 150px;
         display: flex;
         & .swiper-container {
-            width: 90vw;
-            
+            width: 100vw;
         }
     }
 }
@@ -44,7 +43,6 @@
         @include p-18b;
     }
 }
-
 
 .swiper-slide {
     position: relative;
