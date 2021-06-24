@@ -1,5 +1,5 @@
 .postanovki {
-    width: 100vw;
+    // width: 100vw;
     &__title {
         margin: 50px 0 100px 0px;
         text-align: center;
@@ -12,11 +12,11 @@
     &__slider {
         max-width: 1920px;
         height: 550px;
-        float: right;
+        // float: left;
         // padding-left: 150px;
         display: flex;
         & .swiper-container {
-            width: 100vw;
+            width: 100%;
         }
     }
 }

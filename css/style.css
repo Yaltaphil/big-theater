@@ -14,6 +14,7 @@ body {
   color: #ffffff;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  overflow-x: hidden;
 }
 
 a {
@@ -551,10 +552,6 @@ img {
   height: 70px;
 }
 
-.postanovki {
-  width: 100vw;
-}
-
 .postanovki__title {
   margin: 50px 0 100px 0px;
   text-align: center;
@@ -572,14 +569,13 @@ img {
 .postanovki__slider {
   max-width: 1920px;
   height: 550px;
-  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .postanovki__slider .swiper-container {
-  width: 100vw;
+  width: 100%;
 }
 
 .slider-card {
@@ -714,7 +710,6 @@ img {
 }
 
 .partners {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,8 +740,12 @@ img {
   color: #d1a954;
 }
 
+.partners-tiles {
+  max-width: 1110px;
+}
+
 .partners-tiles .swiper-container {
-  width: 60vw;
+  width: 90%;
 }
 
 .partners-tiles .swiper-container .swiper-slide {
@@ -964,6 +963,7 @@ img {
           align-items: center;
   max-width: 1920px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .wrapper {
