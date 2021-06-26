@@ -23,7 +23,7 @@
     width: 100%;
     max-width: 1110px;
     & .swiper-container {
-        width: 90%;
+        width: 100%;
         & .swiper-slide {
             width: 200px;
         }
@@ -31,16 +31,16 @@
 }
 
 .partner-tile {
-    margin: 1rem auto;
+    margin: 1rem 0;
     width: 200px;
     display: flex;
     flex-direction: column;
     & div {
-        margin-top: 32px;
-        & img {
-            top: 0;
-            left: 0;
-            object-fit: cover;
-        }
+        margin-top: 2rem;
+        // & img {
+        //     top: 0;
+        //     left: 0;
+        //     object-fit: cover;
+        // }
     }
 }

@@ -748,7 +748,7 @@ button:hover {
 }
 
 .partners-tiles .swiper-container {
-  width: 90%;
+  width: 100%;
 }
 
 .partners-tiles .swiper-container .swiper-slide {
@@ -756,7 +756,7 @@ button:hover {
 }
 
 .partner-tile {
-  margin: 1rem auto;
+  margin: 1rem 0;
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -768,14 +768,7 @@ button:hover {
 }
 
 .partner-tile div {
-  margin-top: 32px;
-}
-
-.partner-tile div img {
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-top: 2rem;
 }
 
 .mecenat {
