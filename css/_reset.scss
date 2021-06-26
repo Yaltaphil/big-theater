@@ -1,13 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
     box-sizing: border-box;
     background-color: #333333;
     color: #ffffff;
     transition: all 0.1s ease;
     overflow-x: hidden;
+}
+
+* {
+    box-sizing:border-box;
 }
 
 a {
@@ -50,10 +52,10 @@ button:hover {
     background: rgba(17, 17, 16, 0.85);
     transition: all 0.5s ease-in-out;
 }
-img {
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
+// img {
+//     position: relative;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     object-fit: cover;
+// }
