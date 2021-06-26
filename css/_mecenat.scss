@@ -14,21 +14,19 @@
 .mecenat-blocks {
     display: flex;
     flex-flow: row nowrap;
-    // align-items: center;
 }
 
 .contacts {
-    flex: 0 0 210px;
+    flex: 0 0 300px;
     text-align: left;
     color: $white;
     text-transform: uppercase;
     @include p-16b;
-    & div{
+    & div {
         margin-bottom: 1rem;
     }
 }
 .mecenat-form {
-    // flex: 1 1 auto;
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
@@ -66,7 +64,6 @@
 }
 
 .fields3 {
-    // margin-top: 10px;
     display: flex;
     gap: 150px;
     & button {
@@ -88,6 +85,5 @@
         letter-spacing: normal;
         text-align: left;
         color: rgb(152, 152, 152);
-        // padding: 0.5rem;
     }
 }

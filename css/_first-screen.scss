@@ -47,14 +47,12 @@
 .first-screen__text {
     flex: 1 1 60%;
     & div:first-child {
-        // height: 68px;
         @include heading-h1-64b;
         text-transform: uppercase;
         margin-top: 100px;
         
     }
     & div:nth-child(2) {
-        // height: 79px;
         @include p-14r;
         margin: 50px 0;
     }

@@ -1,6 +1,5 @@
 .about-theater {
-    min-height: 922px;
-    // padding: 0 1rem;
+    max-height: 922px;
 }
 
 .about-theater {
@@ -18,7 +17,6 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         gap: 30px;
-        // min-height: 292px;
     }
     &__block1 {
         flex: 1 1 43%;

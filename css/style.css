@@ -225,7 +225,7 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 35px;
+  gap: 2rem;
   padding: 86px 0 0 0;
 }
 
@@ -247,13 +247,19 @@ button:hover {
 }
 
 .burger-soc-links {
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 89px 0 0 80px;
-  gap: 60px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  gap: 50px;
 }
 
 .burger-soc-link_item {
@@ -447,7 +453,7 @@ button:hover {
 }
 
 .about-theater {
-  min-height: 922px;
+  max-height: 922px;
 }
 
 .about-theater__title {
@@ -546,7 +552,7 @@ button:hover {
 }
 
 .postanovki__title {
-  margin: 50px 0 100px 0px;
+  margin: 150px 0 100px 0px;
   text-align: center;
   color: #ffffff;
   font-family: "Open Sans Condensed";
@@ -750,7 +756,7 @@ button:hover {
 }
 
 .partner-tile {
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,8 +811,8 @@ button:hover {
 
 .contacts {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 210px;
-          flex: 0 0 210px;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
@@ -1051,6 +1057,9 @@ button:hover {
   .contacts {
     margin: 60px 1rem;
   }
+  .footer {
+    margin: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1063,10 +1072,6 @@ button:hover {
   }
   .burger {
     display: block;
-    padding-left: 1rem;
-  }
-  .phone {
-    padding-right: 1rem;
   }
   .first-screen__text p:first-child {
     font-size: 52px;
@@ -1124,13 +1129,9 @@ button:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    max-width: 90%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .mecenat-form .fields2 {
-    width: 90%;
+    width: 100%;
   }
   .mecenat-form .fields3 {
     gap: 30px;
